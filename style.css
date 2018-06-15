@@ -72,13 +72,15 @@ ul {
 .logo {
   height: 72px;
   width: 92px;
-  /* margin-right: 1em; */
   vertical-align: top;
-  /* margin-top: 12px; */
+
 }
 .nav__item__logo {
   height: 72px;
   width: 92px;
+  position: absolute;
+  /* left: 100px; */
+  /* top: 150px; */
 }
 
 .header {
@@ -111,8 +113,10 @@ h3 {
 }
 
 section {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+
 }
 
 .project {
@@ -121,6 +125,7 @@ section {
   width: 50%;
   padding-left: 10px;
   padding-right: 10px;
+  min-width: 400px;
 }
 
 .project-img {
@@ -131,7 +136,27 @@ section {
   width: 50%;
   padding-left: 10px;
   padding-right: 10px;
+  min-width: 400px;
 }
+
 .cerfiticate-img {
   width: 100%;
+}
+
+.container-contact{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+}
+
+.contact-way{
+  padding: 1.5em;
+
+}
+
+.contact-img {
+  float: right;
+  width: 42px;
 }
