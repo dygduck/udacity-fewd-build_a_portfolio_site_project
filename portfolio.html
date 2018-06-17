@@ -8,11 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
-    <link rel="stylesheet" type="text/css" href="final.css">
+    <!-- <link rel="stylesheet" type="text/css" href="final.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
-    <nav id="drawer" class="nav">
+    <!-- <nav id="drawer" class="nav">
       <ul class="nav__list">
         <li class="nav__item__logo"><img class= "logo" src="images/logo_duck.png" alt="Duygu Ebcim Ozgul Logo"></li>
         <li class="nav__item"><a href="#">About Me</a></li>
@@ -20,7 +21,19 @@
         <li class="nav__item"><a href="#">Education</a></li>
         <li class="nav__item"><a href="#">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active"><img class= "logo" src="images/logo_duck.png" alt="Duygu Ebcim Ozgul Logo"></a>
+      <a class="nav-item" href="#about-me">About Me</a>
+      <a class="nav-item" href="#projects">Projects</a>
+      <a class="nav-item" href="#education">Education</a>
+      <a class="nav-item" href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
 
     <main>
       <section class="content">
@@ -28,13 +41,13 @@
           <h2 class="h2-header">Hi, I am Duygu Ebcim Ozgul.</h2>
           <h2 class="h2-header">I am a full stack developer.</h2>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
           <h2>About Me</h2>
           <p>I am a full stack software engineer who is recently graduated from Hackbright Academy. Before Hackbright, I studied both design in University of Arts London and economics in Istanbul University. Prior to that I worked as an Operations and Chartering Deputy Manager in tanker shipping business, focussing on voyage calculations, operations, and chartering negotiations. After working for several years, I realized that the key points of my job were problem-solving and database building. After moving to South Bay, I was quickly inspired by the potential of programming and began to take online programming courses. At this point I decided to take my passion one step further by attending Hackbright. After Hackbright, I am excited to combine my design and creativity skills with my engineering skills.
           </p>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
           <h2>Projects</h2>
 
           <div class="container">
@@ -57,7 +70,7 @@
 
         </section>
 
-        <section class="education">
+        <section class="education" id="education">
           <h2>Education</h2>
           <p>I studied both design in University of Arts London and economics in Istanbul University. I am graduated from Hackbright Academy as a full stack software engineer and still taking online courses to improve my skills.</p>
 
@@ -75,9 +88,9 @@
 
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
           <h2>Contact</h2>
-          <p>For more information please contact Duygu Ebcim Ozgul via <a style="padding: 1.5em;" href="mailto:duyguebcim@gmail.com">duyguebcim@gmail.com</a>.
+          <p>For more information please contact Duygu Ebcim Ozgul via: <a style="padding: 1.5em;" href="mailto:duyguebcim@gmail.com">duyguebcim@gmail.com</a>.
           </p>
           <div class="container-contact">
 
@@ -88,12 +101,19 @@
           <div class="contact-way">
             <a href="https://www.linkedin.com/in/duyguebcimozgul/" target="_blank"><img class="contact-img" src="images/linkedin_logo.png" alt="Duygu Ebcim Ozgul Linkedin"></a>
           </div>
-
         </div>
-
         </section>
-
       </section>
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
     </main>
   </body>
 </html>
